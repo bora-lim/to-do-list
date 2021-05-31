@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul,
+li {
+  list-style: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+  -webkit-appearance: none;
+  appearance: none;
+  border: 0;
+  outline: none;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+header h1 {
+  padding: 2rem;
+  background-color: #8d6e63;
+}
+header ul {
+  padding: 1rem 2rem;
+  background-color: #5f4339;
+}
+header ul li {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1rem;
+  color: #fff;
+}
+header ul li:not(:first-child) {
+  margin-left: 2rem;
+}
+header ul li span {
+  font-size: inherit;
+  font-weight: 700;
 }
 
-.App-link {
-  color: #61dafb;
+.list-wr {
+  background-color: #eee;
+  padding: 2rem;
+}
+.list-wr ul li {
+  padding: 0.5em 0;
+}
+.list-wr ul li .todo-name,
+.list-wr ul li strong {
+  color: #5f4339;
+  font-size: 2rem;
+}
+.list-wr ul li button {
+  font-size: 1.5em;
+  padding: 0 0.5em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-list button:first-child {
+  padding-left: 0 !important;
+}
+.btn-check-off .fa-check-circle {
+  color: #bcbcbc;
+}
+.btn-check-on .fa-check-circle {
+  color: #424242;
+}
+
+.btn-modify .fa-eraser,
+.btn-delete .fa-trash-alt {
+  color: #be9c91;
+}
+.add-form {
+  max-width: 400px;
+  padding: 1em 0;
+}
+.add-form input {
+  width: 80%;
+  padding: 0.5em 1em;
+  font-size: 1rem;
+  border: 1px solid #5f4339;
+}
+.btn-add,
+.btn-reset {
+  padding: 0.5em 1em;
+  font-size: 1rem;
+  background-color: #5f4339;
+  border: 1px solid #5f4339;
+  color: #fff;
+  font-weight: 700;
+}
+.btn-add {
+  width: 17%;
+  margin-left: 3%;
+}
+.btn-reset {
+  width: 400px;
 }
